@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: lightgray;
+}
+.navbar .navbar-brand{
+    font-size:40px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
