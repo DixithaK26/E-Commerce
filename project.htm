@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Commerce</title>
+
+  
+  <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+   
+ 
+    
+   <header class="py-3 mb-4 ">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <h1>KADS</h1>
+    </div>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#products" class="nav-link">Products</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="button text-end">
+      <button type="button" id="btn" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      <button type="button"id="btn" class="btn" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-up</button>
+    </div>
+  </div>
+</header>
+
+  <!--sign up-->
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width: 420px;">
+    <div class="modal-content rounded-3 shadow-sm">
+      <div class="modal-header p-3 border-bottom-0">
+        <h5 class="modal-title fw-semibold fs-5" id="signupModalLabel">Sign up</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-3 pt-1">
+        <form>
+          <div class="mb-3">
+            <label for="floatingInput" class="form-label mb-1 small">Email address</label>
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="floatingPassword" class="form-label mb-1 small">Password</label>
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          </div>
+
+          <button class="w-100 mb-3 btn btn-primary" type="submit">Sign up</button>
+          <small class="text-muted d-block mb-3">By signing up, you agree to the terms of use.</small>
+          
+          <hr class="my-3">
+          <h6 class="fw-bold mb-3">Or sign up with</h6>
+
+          <button class="w-100 mb-2 btn btn-outline-secondary" type="button">
+            <i class="bi bi-google me-1"></i> Google
+          </button>
+          <button class="w-100 mb-2 btn btn-outline-primary" type="button">
+            <i class="bi bi-facebook me-1"></i> Facebook
+          </button>
+          <button class="w-100 mb-2 btn btn-outline-dark" type="button">
+            <i class="bi bi-github me-1"></i> GitHub
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--login-->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" style="max-width: 400px;"> 
+    <div class="modal-content rounded-3 shadow-sm">
+      <div class="modal-header p-2 border-bottom-0">
+        <h5 class="modal-title fs-9 fw-bold" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="transform: scale(0.8);"></button>
+      </div>
+      <div class="modal-body p-3 pt-1">
+        <form>
+          <div class="mb-2">
+            <label for="loginEmail" class="form-label small mb-1">Email</label>
+            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="you@example.com">
+          </div>
+          <div class="mb-2">
+            <label for="loginPassword" class="form-label small mb-1">Password</label>
+            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-sm btn-primary w-100 mt-2">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Home Section -->
+  
+   <div class="container-fluid px-0" id="home">
+  <div class="container py-5">
+    <div class="row align-items-center g-5">
+      
+     
+      <div class="col-lg-6 ms-lg-2">
+        <h2 class="fw-bold mb-3" style="font-size: 2rem;">100% Cotton, 0% Compromise.</h2>
+        <p class="lead">Explore our exclusive collection of non-transparent, breathable, and beautiful dresses made only from cotton.</p>
+        <pre class="small text-muted" style="white-space: pre-wrap; font-family: inherit;">
+Wrap yourself in pure cotton grace,
+Soft on the skin, calm in pace.
+Breathable comfort, timeless style,
+Fashion that lets your soul smile.
+        </pre>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn  btn-lg px-4">Shop More</button>
+        </div>
+      </div>
+
+      
+      <div class="col-10 col-sm-8 col-lg-5">
+        <img src="./assets/pic1.png" class="d-block mx-auto img-fluid rounded shadow" alt="Cotton Dress" width="350" height="150" loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<!--ABOUT US-->
+<section class="aboutus" id="about"><b>About</b> Us</section>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/pic2.png" class="d-block w-100" alt="...">
+     
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/p12.png" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/p13.png" class="d-block w-100" alt="...">
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+</section>
+
+
+<section class="products" id="products">Products</section>
+  <!-- Product Cards -->
+
+  <section class="cards-container">
+    <div class="card">
+      <img src="./assets/pic3.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">Cotton Maxi Dress</h5>
+        <p><strong>Price:</strong> ₹1,299 <span style="color: green;">(20% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/pic6.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">Wrap Maxi Dress</h5>
+        <p><strong>Price:</strong> ₹2,020 <span style="color: green;">(30% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/pic4.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">High-Low Maxi Dress</h5>
+        <p><strong>Price:</strong> ₹1,699 <span style="color: green;">(15% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/pic9.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">Empire Waist Maxi</h5>
+        <p><strong>Price:</strong> ₹2,490 <span style="color: green;">(50% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <img src="./assets/pic5.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">One-Shoulder Maxi</h5>
+        <p><strong>Price:</strong> ₹1,199 <span style="color: green;">(18% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+     
+    <div class="card">
+      <img src="./assets/pic10.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">Floral Maxi Dress</h5>
+        <p><strong>Price:</strong> ₹1,500 <span style="color: green;">(25% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+     
+    <div class="card">
+      <img src="./assets/pic8.jpg" class="card-img-top" alt="Cotton Maxi">
+      <div class="card-body">
+        <h5 class="card-title">Solid Maxi Dress</h5>
+        <p><b>Price:</b> ₹1,299 <span style="color: green;">(20% OFF)</span></p>
+        <div style="display: flex; justify-content: flex-end; align-items: center;">
+          <button class="heart-btn" onclick="toggleHeart(this)" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+            <i class="bi bi-suit-heart"></i>
+            <i class="bi bi-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--contact us-->
+  
+
+<section id="contact" class="py-5 custom-bg">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+   
+      <div class="col-md-6">
+        <div class="p-4 shadow rounded-4 bg-white" style="max-width: 400px;">
+          <h4 class="fw-bold mb-3 text-uppercase">Contact Us</h4>
+          <p class="text-muted mb-4 small">We’d love to hear from you! Drop us a message below.</p>
+          <form>
+            <div class="mb-2">
+              <label for="name" class="form-label small">Name</label>
+              <input type="text" class="form-control form-control-sm rounded-2" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-2">
+              <label for="email" class="form-label small">Email</label>
+              <input type="email" class="form-control form-control-sm rounded-2" id="email" placeholder="you@example.com">
+            </div>
+            <div class="mb-2">
+              <label for="message" class="form-label small">Message</label>
+              <textarea class="form-control form-control-sm rounded-2" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-sm btn-primary px-3 py-1 mt-2 rounded-2">Send</button>
+          </form>
+        </div>
+      </div>
+
+     
+      
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+<div class="container">
+   <footer class="py-3 my-4"> 
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+    </li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> 
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Products</a></li> 
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li> 
+    
+  </ul> <p class="text-center text-body-secondary">© 2025 Company, Inc</p> 
+</footer> </div>
+
+  <!-- Bootstrap JS -->
+  <script src="./bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+
+
+  
+  <script>
+    function toggleHeart(btn) {
+      const icon = btn.querySelector('.bi-suit-heart, .bi-suit-heart-fill');
+      if (icon.classList.contains('bi-suit-heart')) {
+        icon.classList.remove('bi-suit-heart');
+        icon.classList.add('bi-suit-heart-fill');
+      } else {
+        icon.classList.remove('bi-suit-heart-fill');
+        icon.classList.add('bi-suit-heart');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color:white;
+  overflow-x:hidden;
+  
+}
+
+
+
+.nav-link {
+  text-decoration: none;
+  color:black;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: black;
+}
+
+
+.button {
+  display: flex;
+  gap: 25px;
+}
+
+.btn {
+  color: white;
+  font-size: 20px;
+  background-color: #a253d6;
+}
+.btn:hover {
+  background-color: #a253d6;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+pre {
+  font-size: 20px;
+}
+
+.lead2 {
+  padding: 30px;
+  font-size: 20px;
+  text-align: justify;
+  color: #2c003e;
+}
+
+.aboutus b{
+  color: black;
+}
+.aboutus, .products {
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  background-color: #d6b3f5;
+}
+
+
+.about {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  padding: 20px;
+  background-color: #c58deb;
+}
+
+.carousel-inner{
+  margin: 10px;
+  height: 550px;
+  width: 100%;;
+}
+.cards-container {
+  margin:5px;
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 20px;
+  overflow-x: auto;
+  gap: 20px;
+  scrollbar-width: none;
+  background-color: #c58deb;
+}
+
+
+.card {
+  flex: 0 0 auto;
+  height: 550px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.card img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+
+#contact textarea {
+  resize: none;
+}
+
+.custom-bg{
+  background:url(./assets/Screenshot\ 2025-07-06\ 203637.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter:blur(10px);
+}
+ button:hover {
+  background-color:transparent;
+  transition: 0.3s;
+  color: black;
+  border-color: black;
+}
+
+@media (max-width: 576px) {
+  
+  .nav{
+    
+    background-color: #c58deb;
+    
+  }
+
+  h1 {
+    display: none;
+    
+  }
+
+  .nav-link {
+    font-size: 16px;
+
+
+    
+  }
+  .nav-link:hover{
+    text-decoration: underline black;
+
+  }
+
+  .button {
+    display: none;
+   
+  }
+  .col img{
+    border: 2px solid;
+}
+
+.carousel-inner img{
+
+  height: 200px;
+
+
+}
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .custom-bg {
+    background:none;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  pre {
+    font-size: 16px;
+  }
+
+  .aboutus, .products {
+    font-size: 28px;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .card {
+    width: 45%;
+    height: auto;
+  }
+
+  .cards-container {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .carousel-inner {
+    height: 400px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  pre {
+    font-size: 18px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .card {
+    width: 32%;
+  }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .cards-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .card {
+    width: 250px;
+    height: 550px;
+  }
+}
